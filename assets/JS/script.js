@@ -20,4 +20,7 @@ function updateTime(){
 var affichageDate = setInterval(updateTime, 1000);
 
 
-TweenMax.from("#logoBig", 3, {right:200});
+TweenMax.set(".joint", {xPercent:120, transformOrigin:"50% 15%"})
+
+TweenMax.to(".wheel", 3, {rotation:360, ease:Linear.easeNone, repeat:-1})
+TweenMax.to(".joint", 3, {rotation:-360, ease:Linear.easeNone, repeat:-1})
