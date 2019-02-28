@@ -11,13 +11,9 @@ function updateTime(){
     if (minutes < 10){
         minutes = "0" + minutes
     }
-    var timeString = hours + ":" + minutes + " ";
-    if(hours > 11){
-        timeString += "PM";
-    } else {
-        timeString += "AM";
-    }
-    var xTime = "Nous sommes le " + nameDays[currentTime.getDay()] + " " + days + " " + nameMonths[currentTime.getMonth()] + " " + years + " " + "<br>" + "Il est " + timeString;
+    var timeString = hours + " h " + minutes + " ";
+    
+    var xTime = "Nous sommes: " + "<br>" + nameDays[currentTime.getDay()] + " " + days + " " + nameMonths[currentTime.getMonth()] + " " + years + " " + "<br>" + " - " + timeString + " - ";
     document.getElementById('rClock').innerHTML = xTime;
 };
 
