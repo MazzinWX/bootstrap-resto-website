@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGLfxUZmgRhWMu_foh71bxzzGiqkOGDiw&callback=myMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
@@ -24,8 +25,8 @@
             <div class='logo col-2'>
                 <img id='logoSmall' src='../bootstrap-resto-website/assets/img/not used/mini_Blue_Elephant.png' style="height: 100%" class= "img-thumbnail img-fluid" alt='Blue Elephant'>
             </div>
-            <div class='title col-2'>
-                <h2>Burger Indien</h2>
+            <div class='title'>
+                <h2>Shangrila</h2>
             </div>
     
             <div class='menu col-8' role="navigation">
@@ -45,7 +46,7 @@
                 <a>Adresse 1</a>
                 <a>Horaire 1</a>
                 <a>Statut 1</a>
-                <img>carte 1
+                <a id='googleMap'>carte 1</a>
             </div>
             <div class='col-2'>Resto 2
                 <a>Adresse 2</a>

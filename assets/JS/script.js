@@ -8,6 +8,9 @@ function updateTime(){
     var days = currentTime.getDate();
     var hours = currentTime.getHours();
     var minutes = currentTime.getMinutes();
+    if (hours < 10){
+        hours = "0" + hours
+    }
     if (minutes < 10){
         minutes = "0" + minutes
     }
@@ -17,10 +20,12 @@ function updateTime(){
     document.getElementById('rClock').innerHTML = xTime;
 };
 
+function myMap() {
+    var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+
 var affichageDate = setInterval(updateTime, 1000);
-
-
-TweenMax.set(".joint", {xPercent:120, transformOrigin:"50% 15%"})
-
-TweenMax.to(".wheel", 3, {rotation:360, ease:Linear.easeNone, repeat:-1})
-TweenMax.to(".joint", 3, {rotation:-360, ease:Linear.easeNone, repeat:-1})

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGLfxUZmgRhWMu_foh71bxzzGiqkOGDiw&callback=myMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
@@ -25,8 +26,8 @@
         <div class='logo col-2'>
             <img id='logoSmall' src='../bootstrap-resto-website/assets/img/not used/mini_Blue_Elephant.png' class= "img-thumbnail" alt='Blue Elephant'>
         </div>
-        <div class='title col-2'>
-            <h2>Burger Indien</h2>
+        <div class='title'>
+            <h2>Shangrila</h2>
         </div>
 
         <div class='menu col-8' role="navigation">
@@ -41,7 +42,15 @@
     </div>
 
     <div class='jumbotron jumbotron-fluid row'>
-        <div class='col-2'></div>
+        <div class='col-2'>
+            <div class='blog'>
+                <p></p><br>
+                <p id='nAsker'></p>
+                <p></p><br>
+                <p id='rClock'></p>
+                <p></p><br>
+            </div>
+        </div>
         <div class='main col-8'>
             <!--      Carousel      -->
     
@@ -59,35 +68,35 @@
                         <div class="carousel-item active">
                             <img src="../bootstrap-resto-website/assets/img/carousel_img/indian dishes01.jpg" class="img-fluid" alt="Indian dish 1">
                             <div class="carousel-caption d-none d-md-block">
-                                <h6>Venez découvrir nos saveurs</h6>
+                                <h6>Cuisine traditionelle et revisitée</h6>
                             </div>
                         </div>
                     
                         <div class="carousel-item">
                             <img src="../bootstrap-resto-website/assets/img/carousel_img/indian dishes02.jpg" class="img-fluid" alt="Indian dish 2">
                             <div class="carousel-caption d-none d-md-block">
-                                    <h6>Venez découvrir nos saveurs</h6>
+                                <h6>Un délice pour le palais</h6>
                             </div>
                         </div>
     
                         <div class="carousel-item">
                             <img src="../bootstrap-resto-website/assets/img/carousel_img/indian dishes03.jpg" class="img-fluid" alt="Indian dish 3">
                             <div class="carousel-caption d-none d-md-block">
-                                    <h6>Venez découvrir nos saveurs</h6>
+                                <h6>Venez découvrir nos saveurs</h6>
                             </div>
                         </div>
                 
                         <div class="carousel-item">
                             <img src="../bootstrap-resto-website/assets/img/carousel_img/indian dishes04.jpg" class="img-fluid" alt="Indian dish 4">
                             <div class="carousel-caption d-none d-md-block">
-                                    <h6>Venez découvrir nos saveurs</h6>
+                                <h6>Cuisine traditionelle et revisitée</h6>
                             </div>
                         </div>
             
                         <div class="carousel-item">
                             <img src="../bootstrap-resto-website/assets/img/carousel_img/indian dishes05.jpg" class="img-fluid" alt="Indian dish 5">
                             <div class="carousel-caption d-none d-md-block">
-                                    <h6>Venez découvrir nos saveurs</h6>
+                                <h6>Un délice pour le palais</h6>
                             </div>
                         </div>
                     </div>
@@ -107,22 +116,16 @@
         <div class='col-2'></div>
     </div>
     <div class='row'>
-        <div class='blog col-3'>
-            <p>----------</p>
-            <p>Ligne faite pour le nom demandé précédemment</p>
-            <p>----------</p>
-            <p id='rClock'></p>
-            <p>----------</p>
-        </div>
-
-
-        <div class='promotions col-3'>
-            <p>Hello! Test pour la ligne 01</p>
-            <p>Test pour la ligne 02</p>
-            <p>Test pour la ligne 03</p>
-            <p>Test pour la ligne 04</p>
-            <p>Test pour la ligne 05</p>
-        </div>
+        <div class='col-3'></div>
+            <div class='promotions col-6'>
+                <h1>Un peu d'histoire ..</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni natus sunt laboriosam corporis sapiente! <br> Tempora magnam pariatur molestias iure necessitatibus numquam laboriosam, nihil quasi maxime nobis modi commodi officia delectus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, minima officia quos dicta culpa amet eligendi consequuntur illum excepturi quas dolorum sed exercitationem nulla, magni eveniet corrupti dolores.<br></p>
+                <p>Voluptatum, error! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ad consequatur maxime enim facere sequi, veritatis exercitationem velit? Doloribus maiores rem hic quo cum quidem. <br>Ad itaque inventore veritatis nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Officiis reprehenderit, corporis praesentium consequuntur nam distinctio nihil voluptates nemo cum veniam deleniti soluta fugit autem sequi voluptatibus obcaecati. Voluptate, asperiores fugit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni natus sunt laboriosam corporis sapiente! <br> Tempora magnam pariatur molestias iure necessitatibus numquam laboriosam, nihil quasi maxime nobis modi commodi officia delectus. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, minima officia quos dicta culpa amet eligendi consequuntur illum excepturi quas dolorum sed exercitationem nulla, magni eveniet corrupti dolores.<br>Voluptatum, error! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ad consequatur maxime enim facere sequi, veritatis exercitationem velit? Doloribus maiores rem hic quo cum quidem. <br>Ad itaque inventore veritatis nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p>Officiis reprehenderit, corporis praesentium consequuntur nam distinctio nihil voluptates nemo cum veniam deleniti soluta fugit autem sequi voluptatibus obcaecati. Voluptate, asperiores fugit.</p>
+            
+            </div>
+        <div class='col-3'></div>
     </div>
 </div>
 </body>
