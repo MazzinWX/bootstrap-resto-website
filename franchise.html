@@ -5,17 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Franchise</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGLfxUZmgRhWMu_foh71bxzzGiqkOGDiw&callback=myMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="assets/JS/script.js"></script>
 
 </head>
@@ -31,7 +27,7 @@
     
             <div class='menu col-8' role="navigation">
                 <ul class="nav nav-pills nav-justified">
-                    <li class="nav-item"><a class="nav-link" href='index.html'>Acceuil</a></li>
+                    <li class="nav-item"><a class="nav-link" href='index.html'>Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href='carte.html'>Nos plats</a></li>
                     <li class="nav-item"><a class="nav-link" href='photos.html'>Ambiance</a></li>
                     <li class="nav-item active"><a class="nav-link" href='franchise.html'>Nos restaurants</a></li>
@@ -39,36 +35,113 @@
                 </ul>
             </div>
         </div>
-        <div class='main row'>
+        <div class='franchise_main row'>
             <div class='col-2'></div>
+            <div class='container-fluid col-8 row'>
+                
+                <div class='col-6'>
+                    <h3>Ganesha</h3>
+                    <a>Rue de la madeleine, 3 <br> 1000 Bruxelles</a>
+                    <br>
+                    <img id='googleMap1' class="gMap">
+                    <br>
+                    <span>Horaire 1</span>
+                    <br>
+                    <span>Statut 1</span>
+                </div>
 
-            <div class='col-2'>Resto 1
-                <a>Adresse 1</a>
-                <a>Horaire 1</a>
-                <a>Statut 1</a>
-                <a id='googleMap'>carte 1</a>
-            </div>
-            <div class='col-2'>Resto 2
-                <a>Adresse 2</a>
-                <a>Horaire 2</a>
-                <a>Statut 2</a>
-                <img>carte 2
-            </div>
-            <div class='col-2'>Resto 3
-                <a>Adresse 3</a>
-                <a>Horaire 3</a>
-                <a>Statut 3</a>
-                <img>carte 3
-            </div>
-            <div class='col-2'>Resto 4
-                <a>Adresse 4</a>
-                <a>Horaire 4</a>
-                <a>Statut 4</a>
-                <img>carte 4
-            </div>
-            
+                <div class='col-6'>
+                    <h3>Ifrit</h3>
+                    <a>Rue du Bien-Faire, 48 <br> 1170 W-Boitsfort</a>
+                    <br>
+                    <img id='googleMap2' class="gMap">
+                    <br>
+                    <span>Horaire 2</span>
+                    <br>
+                    <span>Statut 2</span>
+                </div>
+
+                <div class='col-6'>
+                    <h3>Vishnu</h3>
+                    <a>Place Terdelt, 15 <br> 1030 Schaerbeek</a>
+                    <br>>
+                    <img id='googleMap3' class="gMap">
+                    <br>
+                    <span>Horaire 3</span>
+                    <br>
+                    <span>Statut 3</span>
+                </div>
+
+                <div class='col-6'>
+                    <h3>Kali</h3>
+                    <a>Rue Charlemagne, 18 <br> 1348 Louvain-la-Neuve</a>
+                    <br>
+                    <img id='googleMap4' class="gMap">
+                    <br>
+                    <span>Horaire 4</span>
+                    <br>
+                    <span>Statut 4</span>
+                </div>
+
+            </div>    
             <div class='col-2'></div>
 
         </div>
     </div>
+
+<script>
+    var map;
+    function initGoogleMap1() {
+        map = new google.maps.Map(document.getElementById('googleMap1'), {
+            center: {lat: 50.8452607, lng: 4.3546065},
+            zoom: 17
+        });
+    }
+</script>
+
+<script>
+    var map;
+    function initGoogleMap2() {
+        map = new google.maps.Map(document.getElementById('googleMap2'), {
+            center: {lat: 50.8073503,lng: 4.4002185},
+            zoom: 17
+        });
+    }
+</script>
+
+<script>
+    var map;
+    function initGoogleMap3() {
+        map = new google.maps.Map(document.getElementById('googleMap3'), {
+            center: {lat: 50.8678528,lng: 4.3881146},
+            zoom: 17
+    }
+</script>
+
+<script>
+    var map;
+    function initGoogleMap4() {
+        map = new google.maps.Map(document.getElementById('googleMap4'), {
+            center: {lat: 50.6695839,lng: 4.6111636},
+            zoom: 17
+        });
+    }
+</script>
+
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGLfxUZmgRhWMu_foh71bxzzGiqkOGDiwcallback=initGoogleMap1"
+    async defer>
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGLfxUZmgRhWMu_foh71bxzzGiqkOGDiw&callback=initGoogleMap2"
+    async defer>
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGLfxUZmgRhWMu_foh71bxzzGiqkOGDiw&callback=initGoogleMap3"
+    async defer>
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGLfxUZmgRhWMu_foh71bxzzGiqkOGDiw&callback=initGoogleMap4"
+    async defer>
+    </script>
+
 </body>

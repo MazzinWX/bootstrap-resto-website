@@ -29,3 +29,14 @@ function myMap() {
     }
 
 var affichageDate = setInterval(updateTime, 1000);
+
+// MDB Lightbox Init
+$(function () {
+    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+});
+
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox({
+        alwaysShowClose: true});
+});

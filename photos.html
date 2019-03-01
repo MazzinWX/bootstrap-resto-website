@@ -5,18 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Photos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="assets/JS/script.js"></script>
 
 </head>
@@ -32,7 +27,7 @@
     
             <div class='menu col-8' role="navigation">
                 <ul class="nav nav-pills nav-justified">
-                    <li class="nav-item"><a class="nav-link" href='index.html'>Acceuil</a></li>
+                    <li class="nav-item"><a class="nav-link" href='index.html'>Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href='carte.html'>Nos plats</a></li>
                     <li class="nav-item active"><a class="nav-link" href='photos.html'>Ambiance</a></li>
                     <li class="nav-item"><a class="nav-link" href='franchise.html'>Nos restaurants</a></li>
@@ -43,21 +38,83 @@
         <div class='container-fluid main row'>
             <div class='col-1'></div>
             <div id='picture_shuffle' class='col-10'>
-                <div class='row'>
-                    <div class='col-12 col-md-6 col-lg-3'><img src='/repo Becode/bootstrap-resto-website/assets/img/indian dishes01.jpeg'><a></a></div>
-                    <div class='col-12 col-md-6 col-lg-3'><img src='/repo Becode/bootstrap-resto-website/assets/img/indian dishes02.jpeg'><a></a></div>
-                    <div class='col-12 col-md-6 col-lg-3'><img src='/repo Becode/bootstrap-resto-website/assets/img/indian dishes03.jpeg'><a></a></div>
-                    <div class='col-12 col-md-6 col-lg-3'><img src='/repo Becode/bootstrap-resto-website/assets/img/indian dishes04.jpeg'><a></a></div>
-                    <div class='col-12 col-md-6 col-lg-3'><img src='/repo Becode/bootstrap-resto-website/assets/img/indian dishes05.jpeg'><a></a></div>
-                    <div class='col-12 col-md-6 col-lg-3'><img src='/repo Becode/bootstrap-resto-website/assets/img/indian dishes06.jpeg'><a></a></div>
-                    <div class='col-12 col-md-6 col-lg-3'><img src='/repo Becode/bootstrap-resto-website/assets/img/burger01.jpeg'><a></a></div>
-                    <div class='col-12 col-md-6 col-lg-3'><img src='/repo Becode/bootstrap-resto-website/assets/img/burger02.jpeg'><a></a></div>
-                    <div class='col-12 col-md-6 col-lg-3'><img src='/repo Becode/bootstrap-resto-website/assets/img/burger03.jpeg'><a></a></div>
-                    <div class='col-12 col-md-6 col-lg-3'><img src='/repo Becode/bootstrap-resto-website/assets/img/dharma01.jpg'><a></a></div>
-                    <div class='col-12 col-md-6 col-lg-3'><img src='/repo Becode/bootstrap-resto-website/assets/img/dharma02.jpg'><a></a></div>
-                    <div class='col-12 col-md-6 col-lg-3'><img src='/repo Becode/bootstrap-resto-website/assets/img/dharma03.jpg'><a></a></div>                
+                <div class="container-fluid row">
+                    <div class="col-md-12">
+                        <div id="mdb-lightbox-ui"></div>
+                        <div class="mdb-lightbox row">
+            
+                        <figure class="col-12 col-md-6 col-lg-3">
+                            <a href="/repo Becode/bootstrap-resto-website/assets/img/indian dishes01.jpeg" data-max-width="800">
+                            <img alt="picture" src="/repo Becode/bootstrap-resto-website/assets/img/small_img/indian dishes01.jpeg" class="img-fluid figure-img">
+                            </a>
+                        </figure>
+            
+                        <figure class="col-12 col-md-6 col-lg-3">
+                            <a href="/repo Becode/bootstrap-resto-website/assets/img/indian dishes02.jpeg" data-max-width="800">
+                            <img alt="picture" src="/repo Becode/bootstrap-resto-website/assets/img/small_img/indian dishes02.jpeg" class="img-fluid figure-img" />
+                            </a>
+                        </figure>
+            
+                        <figure class="col-12 col-md-6 col-lg-3">
+                            <a href="/repo Becode/bootstrap-resto-website/assets/img/indian dishes03.jpeg" data-max-width="800">
+                            <img alt="picture" src="/repo Becode/bootstrap-resto-website/assets/img/small_img/indian dishes03.jpeg" class="img-fluid figure-img" />
+                            </a>
+                        </figure>
+            
+                        <figure class="col-12 col-md-6 col-lg-3">
+                            <a href="/repo Becode/bootstrap-resto-website/assets/img/indian dishes04.jpeg" data-max-width="800">
+                            <img alt="picture" src="/repo Becode/bootstrap-resto-website/assets/img/small_img/indian dishes04.jpeg" class="img-fluid figure-img" />
+                            </a>
+                        </figure>
+            
+                        <figure class="col-12 col-md-6 col-lg-3">
+                            <a href="/repo Becode/bootstrap-resto-website/assets/img/indian dishes05.jpeg" data-max-width="800">
+                            <img alt="picture" src="/repo Becode/bootstrap-resto-website/assets/img/small_img/indian dishes05.jpeg" class="img-fluid figure-img" />
+                            </a>
+                        </figure>
+            
+                        <figure class="col-12 col-md-6 col-lg-3">
+                            <a href="/repo Becode/bootstrap-resto-website/assets/img/indian dishes06.jpeg" data-max-width="800">
+                            <img alt="picture" src="/repo Becode/bootstrap-resto-website/assets/img/small_img/indian dishes06.jpeg" class="img-fluid figure-img" />
+                            </a>
+                        </figure>
+            
+                        <figure class="col-12 col-md-6 col-lg-3">
+                            <a href="/repo Becode/bootstrap-resto-website/assets/img/dharma01.jpg" data-max-width="800">
+                            <img alt="picture" src="/repo Becode/bootstrap-resto-website/assets/img/small_img/dharma01.jpg" class="img-fluid figure-img" />
+                            </a>
+                        </figure>
+            
+                        <figure class="col-12 col-md-6 col-lg-3">
+                            <a href="/repo Becode/bootstrap-resto-website/assets/img/dharma02.jpg" data-max-width="800">
+                            <img alt="picture" src="/repo Becode/bootstrap-resto-website/assets/img/small_img/dharma02.jpg" class="img-fluid figure-img" />
+                            </a>
+                        </figure>
+            
+                        <figure class="col-12 col-md-6 col-lg-3">
+                            <a href="/repo Becode/bootstrap-resto-website/assets/img/dharma03.jpg" data-max-width="800">
+                            <img alt="picture" src="/repo Becode/bootstrap-resto-website/assets/img/small_img/dharma03.jpg" class="img-fluid figure-img" />
+                            </a>
+                        </figure>
+            
+                        <figure class="col-12 col-md-6 col-lg-3">
+                            <a href="/repo Becode/bootstrap-resto-website/assets/img/burger01.jpeg" data-max-width="800">
+                            <img alt="picture" src="/repo Becode/bootstrap-resto-website/assets/img/small_img/burger01.jpeg" class="img-fluid figure-img" />
+                            </a>
+                        </figure>
+                        
+                        </div>
+                    </div>
                 </div>
-            <div class='col-1'></div>
-        </div>
+                        
+                <div class='col-1'></div>
+            </div>
     </div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+</html>
+
