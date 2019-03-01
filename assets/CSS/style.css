@@ -3,6 +3,15 @@
     margin: 0px;
     padding: 0px;
 }
+#picture_shuffle {
+    margin: 0px;
+    padding: 0px;
+    background-color: blue;
+}
+
+#picture_shuffle .row img {
+    height: 100%;
+}
 
 body {
     background-color: rgba(250, 180, 50, 0.35);
